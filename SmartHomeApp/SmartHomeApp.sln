@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHomeApp.Android", "SmartHomeApp\SmartHomeApp.Android\SmartHomeApp.Android.csproj", "{F288AB50-D016-416D-A320-443668E0B0B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartHomeApp", "SmartHomeApp\SmartHomeApp\SmartHomeApp.csproj", "{DE5C8F1E-64A4-489E-A5BB-6C7A5F4814B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsSmartHome", "TestProject2\TestsSmartHome.csproj", "{AAFFBA63-B1C6-4AB5-B9D9-DDAA6BC538F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F288AB50-D016-416D-A320-443668E0B0B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F288AB50-D016-416D-A320-443668E0B0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F288AB50-D016-416D-A320-443668E0B0B1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F288AB50-D016-416D-A320-443668E0B0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F288AB50-D016-416D-A320-443668E0B0B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F288AB50-D016-416D-A320-443668E0B0B1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DE5C8F1E-64A4-489E-A5BB-6C7A5F4814B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE5C8F1E-64A4-489E-A5BB-6C7A5F4814B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE5C8F1E-64A4-489E-A5BB-6C7A5F4814B7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DE5C8F1E-64A4-489E-A5BB-6C7A5F4814B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE5C8F1E-64A4-489E-A5BB-6C7A5F4814B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE5C8F1E-64A4-489E-A5BB-6C7A5F4814B7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AAFFBA63-B1C6-4AB5-B9D9-DDAA6BC538F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAFFBA63-B1C6-4AB5-B9D9-DDAA6BC538F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAFFBA63-B1C6-4AB5-B9D9-DDAA6BC538F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAFFBA63-B1C6-4AB5-B9D9-DDAA6BC538F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC7A08D6-78AD-4149-94C6-D8AC8E54E8F6}
+	EndGlobalSection
+EndGlobal

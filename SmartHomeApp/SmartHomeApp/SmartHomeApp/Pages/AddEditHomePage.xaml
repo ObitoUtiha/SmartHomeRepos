@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartHomeApp.Pages.AddEditHomePage" Appearing="ContentPage_Appearing">
+    <ContentPage.Content>
+        <RefreshView  x:Name="RefreshPage" Visual="Material" CascadeInputTransparent="False" RefreshColor="Aquamarine">
+            <ScrollView>
+                <StackLayout>
+                    <Entry x:Name="EntryAddress"
+                  Placeholder="Адрес дома"
+                  Keyboard="Default"/>
+                    <Entry x:Name="EntryDescription"
+                  Placeholder="Описание дома"
+                  Keyboard="Default"/>
+                    <Entry x:Name="EntryName"
+                  Placeholder="Имя дома"
+                  Keyboard="Default"/>
+                    <Image x:Name="resultImage" HeightRequest="350" WidthRequest="300" Source="{Binding}"></Image>
+                    <Button x:Name="BtnSave"
+                    Clicked="BtnSave_Clicked"
+                    Text="Сохранить"
+                    CornerRadius="20"
+                    Margin="10,0,10,0"/>
+                    <Button x:Name="BtnImage"
+                    Clicked="BtnImage_Clicked"
+                    Text="Добавить фото"
+                    CornerRadius="20"
+                    Margin="10,0,10,0"/>
+                </StackLayout>
+            </ScrollView>
+        </RefreshView>
+    </ContentPage.Content>
+</ContentPage>

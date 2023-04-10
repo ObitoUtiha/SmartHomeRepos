@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tool="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="SmartHomeApp.MainPage" Appearing="ContentPage_Appearing">
+    <Grid BackgroundColor="#fcfcfc">
+        <Image   Aspect="AspectFill" Margin="0,90,0,0" VerticalOptions="Start" HeightRequest="120" WidthRequest="60" Source="logo.png"></Image>
+
+        <StackLayout Margin="0,20,0,0" Spacing="15" HorizontalOptions="Center" VerticalOptions="Center">
+            <Frame     Padding = "0"
+                   CornerRadius ="15"
+                   IsClippedToBounds="true"
+                   BorderColor="Black">
+                <Entry x:Name="EntryLogin"
+                HorizontalTextAlignment="Center"
+                Placeholder="Введите почту">
+                    <Entry.Effects>
+                        <tool:RemoveBorderEffect/>
+                    </Entry.Effects>
+                </Entry>
+            </Frame>
+            <Frame     Padding = "0"
+                   CornerRadius ="15"
+                   IsClippedToBounds="true"
+                   BorderColor="Black">
+                <Entry x:Name="EntryPassword"
+               IsPassword="True"
+               HorizontalTextAlignment="Center"
+               Placeholder="Введите пароль">
+                    <Entry.Effects>
+                        <tool:RemoveBorderEffect/>
+                    </Entry.Effects>
+                </Entry>
+            </Frame>
+
+            <Grid WidthRequest="270" HeightRequest="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.6*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" x:Name="BtnLogin"
+                Clicked="BtnLogin_Clicked"
+                Text="Войти"
+                CornerRadius="10"/>
+                <Button Grid.Column="1" x:Name="BtnReg"
+                    Clicked="BtnReg_Clicked"
+                    Text="Регистрация"
+                    CornerRadius="10"/>
+            </Grid>
+
+        </StackLayout>
+        <Grid ColumnSpacing="20"  Margin="30" HeightRequest="70" WidthRequest="60"  VerticalOptions="End">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Frame Padding="0" BorderColor="Black" BackgroundColor="Transparent">
+                <ImageButton></ImageButton>
+            </Frame>
+            <Frame Grid.Column="1" Padding="0" BorderColor="Black" BackgroundColor="Transparent">
+                <ImageButton></ImageButton>
+            </Frame>
+            <Frame Grid.Column="2" Padding="0" BorderColor="Black" BackgroundColor="Transparent">
+                <ImageButton></ImageButton>
+            </Frame>
+            <Frame Grid.Column="3" Padding="0" BorderColor="Black" BackgroundColor="Transparent">
+                <ImageButton></ImageButton>
+            </Frame>
+        </Grid>
+    </Grid>
+</ContentPage>

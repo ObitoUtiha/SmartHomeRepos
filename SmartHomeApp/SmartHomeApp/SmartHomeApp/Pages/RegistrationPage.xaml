@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tool="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="SmartHomeApp.Pages.RegistrationPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.3  *"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Margin="-20" VerticalOptions="Center"   Source="logo.png"></Image>
+
+            <StackLayout Spacing="5" Margin="30,-80,30,0" VerticalOptions="Center" Grid.Row="1">
+                <BoxView  BackgroundColor="#651745"  Grid.Row="1" HeightRequest="1" Margin="70, 20, 70, 20 " HorizontalOptions="FillAndExpand"/>
+                <Label  FontSize="15" IsVisible="true" Margin="20,0,0,0" Text="E-mail" TextColor="Black"/>
+                <Frame  CornerRadius="20" BackgroundColor="Snow">
+                    <Entry Margin="-5"
+                           FontSize="17"
+                           x:Name="EntryLogin"
+                           Placeholder="В формате: username@E-mail.com">
+                        <Entry.Effects>
+                            <tool:RemoveBorderEffect/>
+                        </Entry.Effects>
+                    </Entry>
+                </Frame>
+                <Label  FontSize="15" IsVisible="true" Margin="20,0,0,0" Text="Имя пользователя" TextColor="Black"/>
+                <Frame  CornerRadius="20" BackgroundColor="Snow">
+                    <Entry Margin="-5"
+                           FontSize="17"
+                           x:Name="EntryName"
+                           Placeholder="Любое имя!">
+                        <Entry.Effects>
+                            <tool:RemoveBorderEffect/>
+                        </Entry.Effects>
+                    </Entry>
+                </Frame >
+                <Label  FontSize="15" IsVisible="true" Margin="20,0,0,0" Text="Пароль" TextColor="Black"/>
+                <Frame  CornerRadius="20" BackgroundColor="Snow">
+                    <Entry Margin="-5"
+                           FontSize="17"
+                           x:Name="EntryPassword"
+                           Placeholder="Не любой пароль!(мин. 8 символов)">
+                        <Entry.Effects>
+                            <tool:RemoveBorderEffect/>
+                        </Entry.Effects>
+                    </Entry>
+                </Frame >
+                <Label  FontSize="15" IsVisible="true" Margin="20,0,0,0" Text="Повторите пароль" TextColor="Black"/>
+                <Frame CornerRadius="20" BackgroundColor="Snow">
+                    <Entry Margin="-5"
+                           FontSize="17"
+                           x:Name="EntryConfirmPassword"
+                           >
+                        <Entry.Effects>
+                            <tool:RemoveBorderEffect/>
+                        </Entry.Effects>
+                    </Entry>
+                </Frame>
+                <BoxView  BackgroundColor="#651745"  Grid.Row="1" HeightRequest="1" Margin="70, 20, 70, 20" HorizontalOptions="FillAndExpand"/>
+                <Button x:Name="BtnReg"
+                        Text="Зарегистрироваться"
+                        Clicked="BtnReg_Clicked"
+                        CornerRadius="40"
+                        Margin="40,0,40,0"/>
+                <Label HorizontalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Уже есть аккаунт? " TextColor="Gray" FontSize="15"/>
+                            <Span Text="Войти" TextColor="blue"  FontAttributes="Bold" FontSize="15" TextDecorations="Underline"/>
+
+                        </FormattedString>
+                    </Label.FormattedText>
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

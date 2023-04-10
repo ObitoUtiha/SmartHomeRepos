@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartHomeApp.Pages.HomesPage" Appearing="ContentPage_Appearing">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <ListView x:Name="LVHomes" HasUnevenRows="True" ItemTapped="LVHomes_ItemTapped" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame Margin="10" Padding="20" HeightRequest="150" WidthRequest="600" Visual="Material" IsClippedToBounds="False" HorizontalOptions="Center" CornerRadius="20" BackgroundColor="White">
+
+                                <StackLayout  BackgroundColor="White">
+                                    <Grid RowSpacing="20">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition Height="2*"/>
+                                            <RowDefinition Height="0.1*"/>
+                                            <RowDefinition Height="2*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="0" Grid.RowSpan="4" Source="{Binding image}" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="300" WidthRequest="300"></Image>
+                                        <Label Grid.Column="1" Grid.Row="0" TextColor="Black" FontSize="20" Margin="0,-10,0,-10" FontAttributes="Bold" Text="{Binding name}"></Label>
+                                        <Label Grid.Column="1" Grid.Row="1" TextColor="Black" Margin="0,-5,0,-10"  Text="{Binding fullAddress}"></Label>
+                                        <Grid Grid.Column="1" Margin="0,0,0,0" Grid.Row="3">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                            </Grid.ColumnDefinitions>
+                                            <Button Grid.Column="0"
+                                        Padding="-12"
+                                        Text="Удалить"
+                                        Margin="-4, -1, 2, 0"
+                                        x:Name="BtnDelete"
+                                        Clicked="BtnDelete_Clicked"
+                                        BackgroundColor="#B80F0A"
+                                        BorderColor="Black"
+                                        BorderWidth="1"
+                                        CornerRadius="10"
+                                                    FontSize="14"/>
+                                            <Button Grid.Column="1"
+                                                    Padding="-10"
+                                                    FontSize="11"
+                                        Text="Редактировать"
+                                        Margin="-6, -1, -15, 0"
+                                        x:Name="BtnEdit"
+                                        Clicked="BtnEdit_Clicked"
+                                        BackgroundColor="#898176"
+                                        BorderColor="Black"
+                                        BorderWidth="1"
+                                        CornerRadius="10"/>
+                                        </Grid>
+                                    </Grid>
+                                </StackLayout>
+
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="BtnAdd" CornerRadius="20" Margin="10,0,10,0" HeightRequest="40" Text="Новая заявка" Clicked="BtnAdd_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

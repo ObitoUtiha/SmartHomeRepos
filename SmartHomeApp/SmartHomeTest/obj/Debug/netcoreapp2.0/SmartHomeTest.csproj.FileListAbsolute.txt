@@ -1,0 +1,6 @@
+E:\KURSACH\SmartHomeRepos\SmartHomeApp\SmartHomeTest\bin\Debug\netcoreapp2.0\CoverletSourceRootsMapping
+E:\KURSACH\SmartHomeRepos\SmartHomeApp\SmartHomeTest\obj\Debug\netcoreapp2.0\SmartHomeTest.csproj.AssemblyReference.cache
+E:\KURSACH\SmartHomeRepos\SmartHomeApp\SmartHomeTest\obj\Debug\netcoreapp2.0\SmartHomeTest.GeneratedMSBuildEditorConfig.editorconfig
+E:\KURSACH\SmartHomeRepos\SmartHomeApp\SmartHomeTest\obj\Debug\netcoreapp2.0\SmartHomeTest.AssemblyInfoInputs.cache
+E:\KURSACH\SmartHomeRepos\SmartHomeApp\SmartHomeTest\obj\Debug\netcoreapp2.0\SmartHomeTest.AssemblyInfo.cs
+E:\KURSACH\SmartHomeRepos\SmartHomeApp\SmartHomeTest\obj\Debug\netcoreapp2.0\SmartHomeTest.csproj.CoreCompileInputs.cache
